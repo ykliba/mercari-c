@@ -1,0 +1,124 @@
+%body
+  %header
+    .header-inner
+      .mainheader
+        .logo-box
+          = link_to image_tag("logo.png",class: "logo"), root_path
+        .search-box
+          = form_with do |form|
+            = form.text_field :keyword, class: "search-box__input"
+            .search-btn
+              
+      .nav
+        .list-left
+          .list-left__category
+            = link_to do
+              カテゴリー
+          .list-left__brand
+            = link_to do
+              ブランド
+        .list-right
+          .list-right__login
+            = link_to do
+              ログイン
+          .list-right__signup
+            = link_to do
+              新規会員登録
+
+  .main 
+    .main-visual
+      .content
+        .content__subtitle
+          %h2
+            人生を変えるフリマアプリ
+        .content__text
+          %p
+            FURIMAは誰でも簡単に出品・購入できる
+          %p
+            フリマアプリです
+        .content__btn
+
+    .top-intro
+      .sub-title
+        %h2
+          FURIMAが選ばれる3つの理由
+        .after
+      .list-box
+        .lists
+          .first
+            .first__pic
+            .first__text
+          .second
+            .second__pic
+            .second__text
+          .third
+            .third__pic
+            .third__text
+    
+    .mid
+      .mid__inner
+        .sub-title
+        .text
+        .btn
+
+    .key
+      .head
+      .items
+        .item-first
+          .item-first__img
+          .item-first__subtitle
+          .item-first__detail
+        .item-second
+          .item-second__img
+          .item-second__subtitle
+          .item-second__detail
+        .item-third
+          .item-third__img
+          .item-third__subtitle
+          .item-third__detail
+    
+    .pickup-category
+    .pickup-brand
+
+    .appbanner
+      .inner
+        .inner__title
+        .inner__text
+        .inner__icon
+    
+    %footer
+      %ul.contents
+        %li.content
+          .content__header
+            %ul
+              %li
+              %li
+              %li
+              %li
+        %li.content
+          .content__header
+            %ul
+              %li
+              %li
+              %li
+              %li
+        %li.content
+          .content__header
+            %ul
+              %li
+              %li
+              %li
+              %li
+      .footer-logo
+        .logo-box
+          = link_to image_tag("logo-white.png", class: "logo-box__logo"),root_path
+      %p
+        © FURIMA    
+
+
+  
+          
+           
+
+
+

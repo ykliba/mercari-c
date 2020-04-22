@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  header {
+    width: 100%;
+    height: 100px;
+    // background-color: lightgray;
+    .header-inner {
+      height: 100px;
+      width: 1040px;
+      // background-color: lightskyblue;
+      margin: 0 auto;
+      .mainheader {
+        position: relative;
+        height: 60px;
+        display: flex;
+        // background-color: lightyellow;
+        .logo-box {
+          .logo {
+            width: 140px;
+            height: 50px;
+            margin-top: 10px;
+          }
+        }
+        .search-box {
+          display: flex;
+          &__input {
+            width: 870px;
+            height: 40px;
+            margin-left: 30px;
+            margin-top: 15px;
+          }
+        }
+      }
+      .nav {
+        height: 30px;
+        width: 1040px;
+        // background-color: mediumpurple;
+        margin-top: 10px;
+        display: flex;
+        font-size: 15px;
+        .list-left {
+          display: flex;
+          width: 300px;
+          height: 30px;
+          // background-color: olive;
+          &__category {
+            margin-right: auto;
+            a {
+              text-decoration: none; 
+              color: black;   
+            }
+          }
+          &__brand {
+            margin-right: auto;
+            a {
+              text-decoration: none; 
+              color: black;     
+            }
+          }
+        }
+        .list-right {
+          width: 300px;
+          height: 30px;
+          margin-left: auto;
+          // background-color: orange;
+          text-align: right;
+          display: flex;
+          &__login {
+            margin-left: auto;
+            a {
+              text-decoration: none;
+              color: black;   
+            }
+          }
+          &__signup {
+            margin-left: auto;
+            a {
+              text-decoration: none;
+              color: black;   
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .main {
+    .main-visual {
+      height: 560px;
+      width: 100%;
+      background-image: url("bg-mainVisual-pict_pc.jpg");
+      background-size: cover;
+      position: relative;
+      .content {
+        // background-color: blanchedalmond;
+        margin-left: 80px;
+        margin-top: 82px;
+        width: 1280px;
+        height: 336px;
+        position: absolute;
+        text-shadow: 1px 1px 1px lightgray;
+        &__subtitle {
+          color: white;
+          // background-color: yellowgreen;
+          margin-top: 100px;
+          font-size: 60px;
+        }
+        &__text {
+          color: white;
+          height: 64px;
+          margin-top: 30px;
+          p {
+            margin-bottom: 5px;
+          }
+        }
+        
+      
+      }
+    }
+    .top-intro {
+      width: 100%;
+      height: 598px;
+      background-color: burlywood;
+      position: relative;
+      .sub-title {
+        height: 50px;
+        width: 100%;
+        margin-top: 60px;
+        background-color: lightgray;
+        
+        text-align: center;
+        font-size: 26px;
+        h2 {
+          font-weight: bold;
+        }
+        .after {
+          width: 70px;
+          height: 4px;
+          background-color:lightseagreen;
+          margin: 0 auto;
+          margin-top: 5px;
+        }
+      }
+      .list-box {
+        width: 1020px;
+        height: 598x;
+        // background-color: gold;
+        margin-top: 200px;
+        margin: 0 auto;
+        .lists {
+          background-color: grey;
+          width: 1020px;
+          height: 480px;
+          display: flex;
+          .first {
+            width: 305px;
+            height: 445px;
+            background-color: lightblue;
+            &__pic {
+              width: 300px;
+              height: 300px;
+              background-image: url("pict-reason-01.jpg");
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+            &__text {
+              width: 187px;
+              height: 50px;
+              background-color: khaki;
+            }
+          }
+          .second {
+            width: 305px;
+            height: 445px;
+            background-color: lightcoral;
+            &__pic {
+              background-image: url("pict-reason-02.jpg");
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 300px;
+              height: 300px;
+            }
+            &__text {
+              
+            }
+          }
+          .third {
+            width: 305px;
+            height: 445px;
+            background-color: lightgreen;
+            &__pic {
+              background-image: url("pict-reason-03.jpg");
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 300px;
+              height: 300px;
+            }
+          }
+          
+        }
+        
+      }
+    }
+    .mid {
+      width: 100%;
+      height: 400px;
+      background-image: url("bg-topMiddleDl-pict.jpg");
+      background-size: cover;
+    }
+    .key {
+      width: 100%;
+      height: 730px;
+      background-color: darksalmon;
+      .head {
+       
+      }
+    }
+    .pickup-category {
+      width: 100%;
+      height: 426px;
+    }
+    .pickup-brand {
+      width: 100%;
+      height: 532px;
+      background-color: darkturquoise;
+      background-size: cover;
+    }
+    .appbanner {
+      width: 100%;
+      height: 400px;
+      background-image: url("bg-appBanner-pict.jpg");
+      background-size: cover;
+    }
+    footer {
+      width: 100%;
+      height: 350px;
+      background-color: black;
+      color: white;
+      
+      .footer-logo {
+        background-color: black;
+        color: white;
+        .logo-box {
+          width: 160px;
+          height: 40px;
+          margin: 0 auto;
+          &__logo {
+            width: 160px;
+            height: 46px;
+          }
+        } 
+        p {
+          text-align: center;
+        }
+      
+      }
+    }
+  }
+}
