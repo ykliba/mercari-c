@@ -9,7 +9,8 @@
             .search-box
               = f.text_field :keyword, class: "search-box__input"
               .search-box__submit
-                = image_tag("icon-search 1.png", class: "search-box__submit__icon")
+                = f.label :image do
+                  = image_submit_tag("icon-search 1.png", class: "search-box__submit__icon")
             
               
       .nav
